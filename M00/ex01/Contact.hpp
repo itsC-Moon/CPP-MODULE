@@ -9,6 +9,7 @@ class Contact
   public:
 	int addInfo();
 	void print(int idx);
+	void printAll();
 
   private:
 	std::string firstName;
@@ -16,6 +17,7 @@ class Contact
 	std::string nickName;
 	std::string phoneNumber;
 	std::string darkestSecret;
+
 	std::string getFixBuffer(std::string &str);
 	int getPhoneNumber();
 	int getInfo(std::string &feild, std::string feildName);

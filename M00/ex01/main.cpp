@@ -1,3 +1,4 @@
+#include <ostream>
 #include "PhoneBook.hpp"
 
 int main()

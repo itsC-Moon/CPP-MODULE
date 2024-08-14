@@ -32,9 +32,18 @@ int Contact::getInfo(std::string &feild, std::string feildName)
 	return (0);
 }
 
+void Contact::printAll()
+{
+	std::cout << this->firstName << "\n";
+	std::cout << this->lastName << "\n";
+	std::cout << this->nickName << "\n";
+	std::cout << this->phoneNumber << "\n";
+	std::cout << this->darkestSecret << "\n";
+}
 int Contact::addInfo()
 {
 	int readFlag;
+
 	while (1)
 	{
 		readFlag = this->getInfo(this->firstName, "firstName");
@@ -43,6 +52,7 @@ int Contact::addInfo()
 		if (readFlag == 0)
 			break;
 	}
+
 	while (1)
 	{
 		readFlag = this->getInfo(this->lastName, "lastName");
@@ -67,6 +77,7 @@ int Contact::addInfo()
 		if (readFlag == 0)
 			break;
 	}
+
 	while (1)
 	{
 		readFlag = this->getInfo(this->darkestSecret, "darkestSecret");

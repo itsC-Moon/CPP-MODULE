@@ -6,16 +6,17 @@
 
 class PhoneBook
 {
-	public:
-		void run();
-		PhoneBook();
-	private:
-		int addContact();
-		void display();
-		int idx;
-		int size;
-		Contact contacts[8];
+  private:
+	Contact contacts[8];
+	int idx;
+	int size;
 
+	int addContact();
+	void display();
+
+  public:
+	void run();
+	PhoneBook();
 };
 
 #endif // PhoneBook_H
